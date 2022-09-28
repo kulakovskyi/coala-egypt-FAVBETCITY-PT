@@ -16,12 +16,6 @@ $font-suisse-semb: SuisseIntl-SemiBold, sans-serif //600
 $font-suisse-bold: SuisseIntl-Bold, sans-serif //700
 $font-wulkan: WulkanDisplay, sans-serif
 
-//picture.bao__wom1
-//source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/wom1-mob.png")
-//source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/wom1-mob.png")
-//source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/wom1-tab.png")
-//source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/wom1-desc.png")
-//img(src="img/wom1-desc.png" alt="Favbet")
 
 body
   -webkit-tap-highlight-color: rgba(0,0,0,0)
@@ -35,14 +29,6 @@ body
 .container
   max-width: 700px
   margin: auto
-
-.usik-link
-  position: absolute
-  width: 100%
-  height: 100%
-  top: 0
-  left: 0
-  z-index: 60
 
 .sam
   width: 100%
@@ -118,7 +104,7 @@ body
     position: relative
     z-index: 12
     max-width: 600px
-    padding: 40px 50px 60px
+    padding: 40px 75px 60px 50px
     background: $blue
     box-shadow: 0 10px 30px 10px rgba(1, 1, 32, 0.3)
     border-radius: 14px
@@ -175,6 +161,8 @@ body
       color: #FFFFFF
       position: relative
       padding: 0 0 0 50px
+      span
+        color: $magenta
       &::after
         position: absolute
         left: 0
@@ -232,7 +220,7 @@ body
   &__info
     position: relative
     z-index: 10
-    padding: 100px 144px 0 0
+    padding: 100px 55px 0 0
     display: flex
     flex-direction: column
     align-items: center
@@ -256,13 +244,13 @@ body
       animation: copied 5s ease
       animation-fill-mode: forwards
     &::after
-      content: 'copiat'
+      content: 'copiado'
       position: absolute
       top: 0
       right: -71px
       font-family: $font-wulkan
       color: $magenta
-      font-size: 18px
+      font-size: 12px !important
       line-height: 25px
       text-transform: uppercase
       opacity: 0
@@ -397,43 +385,39 @@ body
     background: $blue
     padding: 31px 40px
     display: flex
-    justify-content: space-between
+    justify-content: center
     &-list
+      width: 100%
       display: flex
       align-items: center
+      justify-content: center
       padding-inline-start: 0
       margin-block-start: 0
       margin-block-end: 0
     &-item
       display: flex
       align-items: center
+      justify-content: center
+      flex-wrap: nowrap !important
       margin: 0 30px 0 0
-      .percent
+      &:last-child
+        margin: 0
+      img
+        min-width: 55px
+      .left
         font-family: $font-suisse-med
-        font-size: 86px
-        line-height: 59px
-        letter-spacing: 0.04em
-        margin: 0 30px 0 0
-        color: #FFFFFF
-      .info
-        font-family: $font-suisse-med
-        font-size: 28px
-        line-height: 36px
-        letter-spacing: 0.02em
         color: $magenta
-    &-copyright
-      display: flex
-      align-items: center
-      .img1
-        margin: 0 20px 0 0
-      .text
-        font-family: $font-suisse-reg
-        font-size: 16px
-        line-height: 22px
-        letter-spacing: 0.02em
-        color: #E8E8E8
-        text-align: right
-        margin: 0 20px 0 0
+        text-transform: uppercase
+        font-size: 3vw
+        margin: 0 5px 0 0
+        white-space: nowrap
+      .right
+        font-family: $font-suisse-med
+        color: #EDEDED
+        text-transform: uppercase
+        font-size: 3vw
+        white-space: nowrap
+
 
 .wrapper-mob
   display: flex
@@ -489,21 +473,3 @@ body
   100%
     transform: scale(1)
     opacity: 1
-
-
-//&__pic
-  //  height: 100%
-  //  //width: 50%
-  //  position: relative
-  //
-  //&__image
-  //  height: 95vh
-  //  position: absolute
-  //  width: 100vh
-  //  top: 165px
-  //  right: 50px
-  //  z-index: 2
-  //  picture
-  //    height: 100%
-  //    position: absolute
-  //    top: 0

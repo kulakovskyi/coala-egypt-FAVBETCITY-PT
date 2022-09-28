@@ -33,27 +33,26 @@
       top: 16%
     &__footer
       padding: 21px 40px
-      &-item
-        .percent
-          font-size: 62px
-          line-height: 42px
-          white-space: nowrap
-        .info
-          font-size: 20px
-          line-height: 26px
-          white-space: nowrap
+
 
 @media screen and (max-width: 1700px)
   .sam
     &__info
-      padding: 57px 92px 0 0
+      padding: 57px 45px 0 0
+
+@media screen and (max-width: 1610px)
+  .sam
+    &__footer
+      &-item
+        img
+          min-width: 40px
 
 @media screen and (max-width: 1610px) and (max-height: 805px)
   .sam
     &__logo
       max-width: 390px
     &__info
-      padding: 22px 92px 0 0
+      padding: 22px 25px 0 0
 
 @media screen and (max-width: 1610px) and (max-height: 749px)
   .sam
@@ -61,7 +60,7 @@
       padding: 15px 40px
 
 
-@media screen and (max-width: 1500px)
+@media screen and (max-width: 1600px)
   .sam
     &__logo
       max-width: 340px
@@ -113,22 +112,12 @@
       font-size: 12px
       line-height: 16px
     &__info
-      padding: 70px 100px 0 0
+      padding: 70px 50px 0 0
     &__footer
       padding: 21px 30px 21px 40px
       &-item
         margin: 0 20px 0 0
-        .percent
-          margin: 0 20px 0 0
-      &-copyright
-        .img1
-          max-width: 50px
-          margin: 0 10px 0 0
-        .img2
-          max-width: 50px
-        .text
-          font-size: 12px
-          line-height: 16px
+
 
 @media screen and (max-width: 1370px) and (min-height: 870px)
   .sam
@@ -154,16 +143,13 @@
     &__logo
       max-width: 297px
     &__info
-      padding: 50px 100px 0 0
+      padding: 50px 45px 0 0
 
 @media screen and (max-width: 1345px)
   .sam
     &__footer
       justify-content: center
-      &-copyright
-        position: absolute
-        right: 38px
-        bottom: 125px
+
 
 
 
@@ -199,15 +185,14 @@
     &__info
       transform-origin: top right
       transform: scale(0.8)
-    &__footer
-      &-copyright
-        bottom: 110px
+
 
 @media screen and (max-width: 1200px) and (orientation: landscape)
   .sam
     &__info
-      padding: 50px 18px 0 0
+      padding: 40px 50px 0 0
       transform: scale(1)
+      align-items: flex-end
     &__pyramid
       left: -192px
     &__pers
@@ -227,26 +212,26 @@
         padding: 4px 8px 2px
         font-size: 18px
         line-height: 23px
-    &__footer
-      &-copyright
-        bottom: 101px
+  .wrapper-mob
+    align-items: center
+
 
 @media screen and (max-width: 1200px) and (orientation: landscape) and (max-height: 650px)
   .sam
     &__info
       transform: scale(0.9)
 
-@media screen and (max-width: 1080px)
-  .sam
-    &__footer
-      &-item
-        .percent
-          font-size: 58px
-          line-height: 36px
-          margin: 0 15px 0 0
-        .info
-          font-size: 17px
-          line-height: 20px
+//@media screen and (max-width: 1080px)
+//  .sam
+//    &__footer
+//      &-item
+//        .percent
+//          font-size: 58px
+//          line-height: 36px
+//          margin: 0 15px 0 0
+//        .info
+//          font-size: 17px
+//          line-height: 20px
 
 @media screen and (max-width: 1050px) and (orientation: landscape)
   .sam
@@ -285,45 +270,29 @@
       bottom: 363px
       right: -76px
     &__footer
-      padding: 30px 30px 25px
+      padding: 25px 30px 25px
       &-list
-        justify-content: space-between
+        justify-content: center
       &-item
         display: flex
         flex-direction: column
         align-items: flex-start
-        margin: 0 60px 0 0
+        margin: 0 25px 0 0
         &:last-child
           margin: 0
-        .percent
-          margin: 0 0 17px 0
-        .info
-          br
-            display: none
-      &-copyright
-        transform-origin: right top
-        transform: scale(1.2)
-        bottom: 250px
-        left: 15px
-        flex-direction: column-reverse
-        align-items: flex-end
-        .img1,
-        .img2
-          margin: 0 0 10px 0
-        .img1
-          order: 3
-          max-width: 44px
-        .img2
-          order: 2
-          max-width: 43px
-        .text
+        .left
+          font-size: 30px
+          line-height: 39px
           margin: 0
-          order: 1
-          font-size: 10px
-          line-height: 12px
+        .right
+          font-size: 30px
+          line-height: 39px
+          margin: 0
+
     &__info
       padding: 70px 45px 0 0
       transform: scale(1)
+      align-items: flex-end
     &__title
       font-size: 57px
       line-height: 66px
@@ -339,6 +308,7 @@
         padding: 4px 8px 2px
         font-size: 18px
         line-height: 23px
+
 
 
 @media screen and (max-width: 1024px) and (orientation: portrait) and (min-height: 1050px)
@@ -365,9 +335,6 @@
   .sam
     &__info
       padding: 41px 30px 0 0
-
-
-
 
 @media screen and (max-width: 800px) and (orientation: portrait)
   .sam
@@ -471,9 +438,10 @@
       width: 100%
       height: 100%
       padding: 90px 0 0 0
+      align-items: center
     &__title
       text-align: center
-      font-size: 44px
+      font-size: 36px
       line-height: 48px
     &__code
       align-items: center
@@ -540,69 +508,28 @@
       flex-direction: column
       position: absolute
       padding: 0
-      bottom: -329px
-      height: 337px
+      bottom: -216px
+      height: 217px
       &-list
         flex-direction: column
       &.visible
         display: flex
-      &-copyright
-        position: relative
-        flex-direction: row
-        bottom: auto
-        left: auto
-        right: auto
-        top: auto
-        align-self: center
-        display: grid
-        grid-template-columns: 1fr 1fr
-        padding: 26px 0 18px 0
-        justify-items: center
-        gap: 10px
-        margin-right: -15px
-        .img1
-          grid-row: 1/2
-          grid-column: 1/2
-          margin: 0
-          justify-self: right
-          max-width: 33px
-        .img2
-          grid-row: 1/2
-          grid-column: 2/3
-          margin: 0
-          justify-self: left
-          max-width: 33px
-        .text
-          grid-row: 2/3
-          grid-column: 1/3
-          margin: 0
-          font-size: 8px
-          line-height: 10px
-          br
-            display: none
-
-
-
       &-item
-        flex-direction: row
+        flex-direction: column
         width: 100%
-        justify-content: space-between
         margin: 0
         padding: 15px 0
         border-top: 1px solid rgba(255, 255, 255, 0.2)
-        &:last-child
-          border-bottom: 1px solid rgba(255, 255, 255, 0.2)
-        .percent
-          font-size: 40px
-          line-height: 36px
-          margin: 0 0 0 15px
+        &:nth-child(2)
+          display: none
+        .left,
+        .right
+          font-size: 24px
+          line-height: 31px
+          margin: 0 15px
 
-        .info
-          font-size: 14px
-          line-height: 16px
-          margin: 0 15px 0 0
-          br
-            display: block
+
+
 
 @media screen and (max-width: 600px) and (orientation: portrait) and (max-height: 700px)
   .sam
@@ -703,22 +630,6 @@
       max-width: 174px
     &__footer
       padding: 7px
-      &-copyright
-        position: static
-        .text
-          font-size: 9px
-          line-height: 11px
-        .img1,
-        .img2
-          max-width: 32px
-      &-item
-        .percent
-          font-size: 28px
-          line-height: 28px
-          margin: 0 14px 0 0
-        .info
-          font-size: 12px
-          line-height: 14px
     &__pyramid
       width: 100%
       height: auto
@@ -731,6 +642,10 @@
     &__info
       transform-origin: top right
       transform: scale(0.7)
+    &__footer
+      &-item
+        img
+          min-width: 40px
 
 @media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 400px)
   .sam
